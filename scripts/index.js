@@ -48,3 +48,8 @@ function addListAfterPress(event){
         createlistElement();
     }
 } 
+
+
+button.addEventListener("click", addListAFterClick);
+
+input.addEventListener("keypress", addListAfterPress);
