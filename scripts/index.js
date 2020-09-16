@@ -17,6 +17,13 @@ function createlistElement() {
         // if the list item is clicked htis toggles the done class
         var finished = this.classList.toggle("done");
         // creates a remove button for the finished item:
-        var removeButton - document.createElement("button");
+        var removeButton = document.createElement("button");
+        removeButton.classList.add("deleteButton");
+
+        //if the list item is clicked (lis add event listner ) then
+        // finished is true
+        if (finished) {
+            removeButton
+        }
     }
 
