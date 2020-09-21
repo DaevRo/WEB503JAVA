@@ -49,7 +49,6 @@ function addListAfterPress(event){
     }
 } 
 
-
 button.addEventListener("click", addListAFterClick);
 
 input.addEventListener("keypress", addListAfterPress);
