@@ -6,10 +6,9 @@ function inputLength() {
     return input.value.length;
 }
 
-function createlistElement() {
+function createListElement() {
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input);
-    li.appendChild(document.createTextNode(input.value);
+    li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
 
     li.addEventListener("click", function () {
@@ -38,17 +37,17 @@ function createlistElement() {
     input.value ="";
 }
 function addListAfterClick() {
-    if (inputLength() > 0 {
-        createlistElement();
+    if (inputLength() > 0) {
+        createListElement();
     }
 }
 
-function addListAfterPress(event){
-    if (inputLength() > 0 && event.keyCode == 13) {
+function addListAfterPress(event) {
+    if (inputLength() > 0 && event.keyCode === 13) {
         createlistElement();
     }
 } 
 
-button.addEventListener("click", addListAFterClick);
+button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterPress);
